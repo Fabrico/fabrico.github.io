@@ -1,85 +1,120 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Fabrico Consulting</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <title>fabr.co</title>
+  <style rel="stylesheet">
+    @keyframes logoColor {
+      16.6% {
+        background-color: #008A00;
+      }
+
+      33.3% {
+        background-color: #F0A30A;
+      }
+
+      50% {
+        background-color: #E51400;
+      }
+
+      66.6% {
+        background-color: #AA00FF;
+      }
+
+      83.3% {
+        background-color: #1BA1E2;
+      }
+
+      100% {
+        background-color: #008A00;
+      }
+    }
+
+    @-webkit-keyframes logoColor {
+      16.6% {
+        background-color: #008A00;
+      }
+
+      33.3% {
+        background-color: #F0A30A;
+      }
+
+      50% {
+        background-color: #E51400;
+      }
+
+      66.6% {
+        background-color: #AA00FF;
+      }
+
+      83.3% {
+        background-color: #1BA1E2;
+      }
+
+      100% {
+        background-color: #008A00;
+      }
+    }
+
     html,
     body {
       height: 100%;
       margin: 0;
       padding: 0;
     }
+
     section {
       font-family: "Helvetica Neue", Helvetica, Arial;
       text-align: center;
       height: 100%;
       background: #008A00;
       color: #FFF;
-      animation: logoColor 14s ease 0 infinite;
-      -webkit-animation: logoColor 14s ease 0 infinite;
+      animation: logoColor 14s infinite;
+      animation-timing-function: ease;
+      -webkit-animation: logoColor 14s infinite;
+      -webkit-animation-timing-function: ease;
     }
-    @keyframes logoColor {
-      16.6% {
-        background-color: #008A00;
-      }
-      33.3% {
-        background-color: #F0A30A;
-      }
-      50% {
-        background-color: #E51400;
-      }
-      66.6% {
-        background-color: #AA00FF;
-      }
-      83.3% {
-        background-color: #1BA1E2;
-      }
-    }
-    @-webkit-keyframes logoColor {
-      16.6% {
-        background-color: #008A00;
-      }
-      33.3% {
-        background-color: #F0A30A;
-      }
-      50% {
-        background-color: #E51400;
-      }
-      66.6% {
-        background-color: #AA00FF;
-      }
-      83.3% {
-        background-color: #1BA1E2;
-      }
-    }
+
+
+
     #logo {
       border-radius: 50%;
       margin: 5em 5em 2em;
       width: 20%;
     }
+
     h1 {
       font-size: 3em;
       font-weight: 200;
       text-transform: lowercase;
     }
+
     h2 {
       font-size: 2em;
       font-weight: 200;
       text-transform: uppercase;
     }
+
     @media only screen and (max-device-width: 480px) {
       section {
         padding: 2em;
       }
+
       #logo {
         width: 58%;
-        heigth: auto;
+        height: auto;
         margin: 2em 2em 3em;
       }
+
       h1 {
         font-size: 1.5em;
       }
+
       h2 {
         font-size: 1em;
       }
