@@ -1,125 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <title>fabr.co</title>
+    <style rel="stylesheet">
+      @keyframes logoColor {
+        0% {
+          background-color: #008a00;
+        }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="cache-control" content="max-age=0" />
-  <meta http-equiv="cache-control" content="no-cache" />
-  <meta http-equiv="expires" content="0" />
-  <title>fabr.co</title>
-  <style rel="stylesheet">
-    @keyframes logoColor {
-      0% {
-        background-color: #008A00;
+        20% {
+          background-color: #f0a30a;
+        }
+
+        40% {
+          background-color: #e51400;
+        }
+
+        60% {
+          background-color: #aa00ff;
+        }
+
+        80% {
+          background-color: #1ba1e2;
+        }
+
+        100% {
+          background-color: #008a00;
+        }
       }
 
-      20% {
-        background-color: #F0A30A;
+      @-webkit-keyframes logoColor {
+        0% {
+          background-color: #008a00;
+        }
+
+        20% {
+          background-color: #f0a30a;
+        }
+
+        40% {
+          background-color: #e51400;
+        }
+
+        60% {
+          background-color: #aa00ff;
+        }
+
+        80% {
+          background-color: #1ba1e2;
+        }
+
+        100% {
+          background-color: #008a00;
+        }
       }
 
-      40% {
-        background-color: #E51400;
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
       }
 
-      60% {
-        background-color: #AA00FF;
-      }
-
-      80% {
-        background-color: #1BA1E2;
-      }
-    }
-
-    @-webkit-keyframes logoColor {
-      0% {
-        background-color: #008A00;
-      }
-
-      20% {
-        background-color: #F0A30A;
-      }
-
-      40% {
-        background-color: #E51400;
-      }
-
-      60% {
-        background-color: #AA00FF;
-      }
-
-      80% {
-        background-color: #1BA1E2;
-      }
-    }
-
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    section {
-      font-family: "Helvetica Neue", Helvetica, Arial;
-      text-align: center;
-      height: 100%;
-      background: #008A00;
-      color: #FFF;
-      animation: logoColor 14s infinite;
-      animation-timing-function: ease;
-      -webkit-animation: logoColor 14s infinite;
-      -webkit-animation-timing-function: ease;
-    }
-
-
-
-    #logo {
-      border-radius: 50%;
-      margin: 5em 5em 2em;
-      width: 20%;
-    }
-
-    h1 {
-      font-size: 3em;
-      font-weight: 200;
-      text-transform: lowercase;
-    }
-
-    h2 {
-      font-size: 2em;
-      font-weight: 200;
-      text-transform: uppercase;
-    }
-
-    @media only screen and (max-device-width: 480px) {
       section {
-        padding: 2em;
+        font-family: "Helvetica Neue", Helvetica, Arial;
+        text-align: center;
+        height: 100%;
+        color: #fff;
+        animation: logoColor 14s infinite;
+        animation-timing-function: ease;
+        -webkit-animation: logoColor 14s infinite;
+        -webkit-animation-timing-function: ease;
       }
 
       #logo {
-        width: 58%;
-        height: auto;
-        margin: 2em 2em 3em;
+        border-radius: 50%;
+        margin: 5em 5em 2em;
+        width: 20%;
       }
 
       h1 {
-        font-size: 2em;
+        font-size: 3em;
+        font-weight: 200;
+        text-transform: lowercase;
       }
 
       h2 {
-        font-size: 1em;
+        font-size: 2em;
+        font-weight: 200;
+        text-transform: uppercase;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <section>
-    <img id="logo" src="logo.png" />
-    <h1>this site is under construction</h1>
-    <h2>please visit again soon</h2>
-  </section>
-</body>
+      @media only screen and (max-device-width: 480px) {
+        section {
+          padding: 2em;
+        }
 
+        #logo {
+          width: 58%;
+          height: auto;
+          margin: 2em 2em 3em;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        h2 {
+          font-size: 1em;
+        }
+      }
+
+      .typewriter h1 {
+        display: inline-block;
+        overflow: hidden;
+        border-right: #FFF 0.2ch solid;
+        font-family: "Courier New", Courier, monospace;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.15em;
+        animation: typing 7s steps(21, end) infinite,
+          blink-caret 0.75s step-end infinite;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        0% {
+          width: 0;
+        }
+        33.3% {
+          width: 18ch;
+        }
+        100% {
+          width: 18ch;
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img id="logo" src="logo.png" />
+      <div class="typewriter">
+        <h1>ƒ(a,b):{ℝ,𝕀}→∞</h1>
+      </div>
+      <h1>this site is under construction</h1>
+      <h2>please visit again soon</h2>
+    </section>
+  </body>
 </html>
