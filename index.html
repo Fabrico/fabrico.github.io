@@ -65,55 +65,49 @@
         height: 100%;
         margin: 0;
         padding: 0;
-      }
-
-      section {
-        font-family: "Helvetica Neue", Helvetica, Arial;
-        text-align: center;
-        height: 100%;
-        color: #fff;
         animation: logoColor 14s infinite;
         animation-timing-function: ease;
         -webkit-animation: logoColor 14s infinite;
         -webkit-animation-timing-function: ease;
       }
 
+      section {
+        font-family: "Helvetica Neue", Helvetica, Arial;
+        text-align: center;
+        min-height: 100vh;
+        color: #fff;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
       #logo {
         border-radius: 50%;
-        margin: 5em 5em 2em;
+        margin: 2em 2em 1em;
         width: 20%;
+        max-width: 200px;
       }
 
       h1 {
         font-size: 3em;
         font-weight: 200;
         text-transform: lowercase;
+        margin: 0.5em 0;
       }
 
       h2 {
         font-size: 2em;
         font-weight: 200;
         text-transform: uppercase;
+        margin: 0.5em 0;
       }
 
-      @media only screen and (max-device-width: 480px) {
-        section {
-          padding: 2em;
-        }
-
-        #logo {
-          width: 58%;
-          height: auto;
-          margin: 2em 2em 3em;
-        }
-
-        h1 {
-          font-size: 2em;
-        }
-
-        h2 {
-          font-size: 1em;
-        }
+      h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        margin: 1em 0;
       }
 
       .typewriter h1 {
@@ -151,6 +145,170 @@
           border-color: #fff;
         }
       }
+
+      .product-section {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 20px;
+        padding: 3em;
+        margin: 2em 0;
+        max-width: 800px;
+        backdrop-filter: blur(10px);
+      }
+
+      .virtuoso-logo {
+        width: 120px;
+        height: 120px;
+        margin: 1em auto;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .virtuoso-logo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 15px 30px;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+        margin: 1em 0.5em;
+      }
+
+      .cta-button:hover {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: rgba(255, 255, 255, 0.6);
+        transform: translateY(-2px);
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2em;
+        margin: 2em 0;
+      }
+
+      .feature-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2em;
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+      }
+
+      .feature-item h4 {
+        font-size: 1.3em;
+        margin-bottom: 1em;
+        font-weight: 400;
+      }
+
+      .feature-item p {
+        font-size: 1em;
+        line-height: 1.6;
+        font-weight: 300;
+      }
+
+      .faq-section {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        padding: 3em;
+        margin: 2em 0;
+        max-width: 800px;
+        backdrop-filter: blur(10px);
+      }
+
+      .faq-item {
+        margin: 1.5em 0;
+        text-align: left;
+      }
+
+      .faq-question {
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: white;
+        padding: 1em;
+        width: 100%;
+        text-align: left;
+        font-size: 1.1em;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-question:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .faq-answer {
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 0 0 10px 10px;
+      }
+
+      .faq-answer.active {
+        padding: 1em;
+        max-height: 500px;
+      }
+
+      .faq-answer p {
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .footer-section {
+        margin-top: 4em;
+        padding-top: 2em;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      @media only screen and (max-device-width: 480px) {
+        section {
+          padding: 1em;
+        }
+
+        #logo {
+          width: 40%;
+          margin: 1em 1em 2em;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        h2 {
+          font-size: 1.5em;
+        }
+
+        h3 {
+          font-size: 1.2em;
+        }
+
+        .product-section, .faq-section {
+          padding: 2em;
+        }
+
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
   <body>
@@ -159,8 +317,121 @@
       <div class="typewriter">
         <h1>ƒ(a,b):{ℝ,𝕀}→∞</h1>
       </div>
-      <h1>this site is under construction</h1>
-      <h2>please visit again soon</h2>
+      <h2>Gabriël Wolmarans</h2>
+      <h3>Sole Proprietor & Technical Consultant</h3>
+
+      <!-- Virtuoso Academy Product Section -->
+      <div class="product-section">
+        <div class="virtuoso-logo">
+          <img src="segno.svg" alt="Virtuoso Academy Logo" />
+        </div>
+        <h2>Virtuoso Academy</h2>
+        <p>A comprehensive SaaS platform providing specialized software tools and resources for musicians, learners, teachers, and professionals to master their craft and achieve excellence.</p>
+        
+        <div class="features-grid">
+          <div class="feature-item">
+            <h4>🎵 For Musicians</h4>
+            <p>Professional tools for composition, practice, and performance enhancement</p>
+          </div>
+          <div class="feature-item">
+            <h4>📚 For Learners</h4>
+            <p>Interactive learning modules and progress tracking systems</p>
+          </div>
+          <div class="feature-item">
+            <h4>👨‍🏫 For Teachers</h4>
+            <p>Comprehensive teaching tools and student management features</p>
+          </div>
+          <div class="feature-item">
+            <h4>💼 For Professionals</h4>
+            <p>Advanced analytics and productivity tools for career growth</p>
+          </div>
+        </div>
+
+        <a href="https://virtuoso.academy" class="cta-button" target="_blank">Visit Virtuoso Academy</a>
+        <a href="https://linkedin.com/in/gjmwolmarans" class="cta-button" target="_blank">Connect on LinkedIn</a>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What is Virtuoso Academy?
+            <span>▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Virtuoso Academy is a comprehensive SaaS platform that provides specialized software tools and resources for musicians, learners, teachers, and professionals. It offers a suite of applications designed to help users master their craft and achieve excellence in their respective fields.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Who can benefit from Virtuoso Academy?
+            <span>▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Virtuoso Academy is designed for four main user groups: Musicians looking for professional composition and practice tools, Learners seeking interactive educational resources, Teachers needing comprehensive classroom management tools, and Professionals wanting advanced productivity and analytics features.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What makes Virtuoso Academy different from other platforms?
+            <span>▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Unlike generic learning platforms, Virtuoso Academy provides specialized software tools tailored to specific professions and crafts. Our SaaS approach ensures continuous updates, cloud-based accessibility, and integrated workflows that adapt to each user's unique needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How do I get started with the platform?
+            <span>▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Visit virtuoso.academy to explore our software tools and sign up for a free trial. You can also connect with Gabriël Wolmarans on LinkedIn for personalized onboarding and to discuss which tools best fit your specific requirements.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Is this a subscription-based service?
+            <span>▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, Virtuoso Academy operates as a Software-as-a-Service (SaaS) platform with flexible subscription plans tailored to individual users, educational institutions, and professional organizations. This ensures you always have access to the latest features and updates.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <p>&copy; 2024 Gabriël Wolmarans | fabr.co</p>
+      </div>
     </section>
+
+    <script>
+      // FAQ toggle functionality
+      function toggleFaq(button) {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector('span');
+        const isActive = answer.classList.contains('active');
+        
+        // Close all other FAQ items
+        document.querySelectorAll('.faq-answer').forEach(item => {
+          item.classList.remove('active');
+        });
+        document.querySelectorAll('.faq-question span').forEach(item => {
+          item.textContent = '▼';
+        });
+        
+        // Toggle current item
+        if (!isActive) {
+          answer.classList.add('active');
+          icon.textContent = '▲';
+        }
+      }
+    </script>
   </body>
 </html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Optimized Virtuoso Academy Logo - exact visual match with minimal file size -->
+  
+  <!-- Main S-shaped body using precise curves to match original appearance -->
+  <path d="M400 120
+           C280 120 180 180 180 280
+           C180 360 240 420 320 450
+           L580 550
+           C680 580 720 640 720 720
+           C720 800 640 860 560 860
+           C480 860 420 800 420 720
+           M604 904
+           C724 904 824 844 824 744
+           C824 664 764 604 684 574
+           L424 474
+           C324 444 284 384 284 304
+           C284 224 364 164 444 164
+           C524 164 584 224 584 304" 
+        fill="white" 
+        stroke="white" 
+        stroke-width="100" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Diagonal crossing line -->
+  <line x1="150" y1="150" x2="874" y2="874" 
+        stroke="white" 
+        stroke-width="70" 
+        stroke-linecap="round"/>
+  
+  <!-- Side circular elements -->
+  <circle cx="120" cy="320" r="70" fill="white"/>
+  <circle cx="904" cy="704" r="70" fill="white"/>
+</svg>
